@@ -69,7 +69,7 @@ cat > $RPM_BUILD_ROOT%{_datadir}/applications/mandriva-%{name}.desktop << EOF
 Name=%{name}
 Comment=Webcam tool
 Exec=%{_bindir}/camstream
-Icon=video_section.png
+Icon=video_section
 Type=Application
 Categories=Qt;X-MandrivaLinux-Multimedia-Video;AudioVideo;Recorder;
 EOF
