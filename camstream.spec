@@ -10,7 +10,6 @@ Source:		%name-%version.tar.bz2
 Patch0:		camstream_lib64.patch
 Patch1:		camstream-0.26.3-x86_64-asm.patch
 
-BuildRoot:	%_tmppath/%name-%version-%release-root
 ExcludeArch:	ppc
 
 Buildrequires:  jpeg-devel png-devel zlib1-devel libqt-devel
