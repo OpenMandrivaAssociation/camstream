@@ -50,19 +50,6 @@ export CFLAGS="%optflags" CXXFLAGS="%optflags"
 %install
 %makeinstall
 
-(cd $RPM_BUILD_ROOT
-mkdir -p ./usr/lib/menu
-cat > ./usr/lib/menu/%{name} <<EOF
-?package(camstream):\
-command="/usr/bin/camstream" \
-icon="video_section.png" \
-needs="X11" \
-section="Multimedia/Video" \
-title="Camstream" \
-longtitle="Webcam tool"\
-xdg="true"
-EOF
-
 mkdir -p $RPM_BUILD_ROOT%{_datadir}/applications
 cat > $RPM_BUILD_ROOT%{_datadir}/applications/mandriva-%{name}.desktop << EOF
 [Desktop Entry]
@@ -73,7 +60,6 @@ Icon=video_section
 Type=Application
 Categories=Qt;X-MandrivaLinux-Multimedia-Video;AudioVideo;Recorder;
 EOF
-)
 
 %post
 %{update_menus}
@@ -89,7 +75,6 @@ rm -rf $RPM_BUILD_ROOT
 %doc docs/*
 %defattr(-,root,root)
 %_bindir/*
-%_menudir/*
 %{_datadir}/applications/mandriva-%{name}.desktop
 %dir %_datadir/%name
 %_datadir/%name/*
