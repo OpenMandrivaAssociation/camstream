@@ -1,12 +1,12 @@
 Name:		camstream
-Version:	0.26.3
-Release:	%mkrel 6
+Version:	0.27
+Release:	%mkrel 1
 Summary:	A tool for streaming and saving snapshots from a webcam
-License:	GPL
+License:	GPL+
 Group:		Video
-Url:		http://www.smcc.demon.nl/camstream/
+URL:		http://www.smcc.demon.nl/camstream/
 
-Source:		%name-%version.tar.bz2
+Source0:	%name-%version.tar.gz
 Patch0:		camstream_lib64.patch
 Patch1:		camstream-0.26.3-x86_64-asm.patch
 
@@ -58,7 +58,7 @@ Comment=Webcam tool
 Exec=%{_bindir}/camstream
 Icon=video_section
 Type=Application
-Categories=Qt;X-MandrivaLinux-Multimedia-Video;AudioVideo;Recorder;
+Categories=Qt;AudioVideo;Recorder;
 EOF
 
 %post
