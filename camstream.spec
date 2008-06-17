@@ -7,7 +7,6 @@ Group:		Video
 URL:		http://www.smcc.demon.nl/camstream/
 
 Source0:	%name-%version.tar.gz
-Patch0:		camstream_lib64.patch
 Patch1:		camstream-0.26.3-x86_64-asm.patch
 
 BuildRoot:	%_tmppath/%name-%version-%release-root
@@ -23,8 +22,6 @@ snapshots. It provides a GUI frontend to control the Webcam(s).
 %prep
 
 %setup -q
-
-%patch0 -p1
 
 %ifarch x86_64
 %patch1 -p1
