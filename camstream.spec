@@ -1,6 +1,6 @@
 Name:		camstream
 Version:	0.27
-Release:	%mkrel 2
+Release:	%mkrel 3
 Summary:	A tool for streaming and saving snapshots from a webcam
 License:	GPL+
 Group:		Video
