@@ -4,7 +4,7 @@ Release:	%mkrel 3
 Summary:	A tool for streaming and saving snapshots from a webcam
 License:	GPL+
 Group:		Video
-URL:		http://www.smcc.demon.nl/camstream/
+URL:		https://www.smcc.demon.nl/camstream/
 
 Source0:	%name-%version.tar.gz
 Patch1:		camstream-0.26.3-x86_64-asm.patch
