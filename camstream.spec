@@ -12,6 +12,11 @@ Patch1:		camstream-0.26.3-x86_64-asm.patch
 BuildRoot:	%_tmppath/%name-%version-%release-root
 ExcludeArch:	ppc
 
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 Buildrequires:  jpeg-devel png-devel zlib1-devel libqt-devel
 
 %description
